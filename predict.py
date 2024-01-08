@@ -136,7 +136,7 @@ class Predictor(BasePredictor):
         max_duration: int = Input(
             description="Maximum duration of the generated loop in seconds.",
             default=8,
-            le=20,
+            le=300,
             ge=2,
         ),
         model_version: str = Input(
