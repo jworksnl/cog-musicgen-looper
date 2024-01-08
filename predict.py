@@ -141,7 +141,7 @@ class Predictor(BasePredictor):
         ),
         model_version: str = Input(
             description="Model to use for generation. .",
-            default="medium",
+            default="large",
             choices=["medium", "large"],
         ),
         top_k: int = Input(
